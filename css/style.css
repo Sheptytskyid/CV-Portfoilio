@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+
+}
+
+ul, li {
+    list-style: none;
+}
+
+.global-container {
+    min-height: calc(100vh - 30px);
+}
+
+.header, .footer {
+    background-color: #3449dc;
+    color: white;
+}
+
+.footer {
+    height: 30px;
+}
+
+.container {
+    width: 1024px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+/*region HEAD*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile__photo {
+    float: left;
+    width: 130px;
+    padding: 3% 0;
+}
+
+.profile__photo img {
+    border-radius: 50%;
+    width: inherit;
+}
+
+.profile__credentials {
+    float: left;
+    width: 400px;
+    padding: 4% 3%;
+}
+
+.profile__name {
+    letter-spacing: 2px;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.profile__role {
+    font-weight: normal;
+    font-size: 18pt;
+}
+
+.profile__contacts {
+    float: left;
+    width: 300px;
+    padding: 3% 2%;
+}
+
+.profile__contacts__list {
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+.profile__item--address:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f3c5";
+    font-size: 14px;
+    position: absolute;
+    left: -30px;
+    font-weight: 900;
+}
+
+.profile__item--site:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0ac";
+    font-size: 14px;
+    position: absolute;
+    left: -30px;
+    font-weight: 900;
+}
+
+.profile__item--phone:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+    font-size: 14px;
+    position: absolute;
+    left: -30px;
+    font-weight: 900;
+}
+/*endregion*/
+
+/*region MAIN*/
+.container__left {
+    float: left;
+    width: 250px;
+    margin-right: 50px;
+    height: 90%;
+    margin-bottom: 20px;
+}
+
+.container__right {
+    float: left;
+    width: 570px;
+    height: 90%;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    padding: 5px 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18pt;
+}
+
+.section-title:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0b1";
+    font-weight: 900;
+    color: white;
+    font-size: 18px;
+    background-color: #3449dc;
+    border-radius: 50%;
+    padding: 11px 11px;
+    margin-right: 10px;
+}
+
+.profile-info__bio {
+    text-align: left;
+}
+
+.interests__list > li {
+    display: inline-block;
+    font-size: 17px;
+    text-align: left;
+    position: relative;
+    width: 75px;
+    padding-top: 60px;
+}
+
+.interests__item {
+    font-weight: bold;
+}
+
+.interests__item:before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 19pt;
+    color: #3449dc;
+    border-radius: 50%;
+    font-weight: 900;
+    border: 6px solid #3449dc;
+    padding: 8px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.interests__item--music:before {
+    content: "\f025";
+}
+
+.interests__item--gaming:before {
+    content: "\f11b";
+}
+
+.interests__item--biking:before {
+    content: "\f21c"
+}
+
+.reference__list {
+    padding-left: 40px;
+}
+
+.reference__item {
+    position: relative;
+}
+
+.reference__item:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.bullet {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 6px solid gray;
+    margin-left: -40px;
+    margin-top: 29px;
+    float: left;
+}
+
+.reference__item:before {
+    background-color: gray;
+    width: 2px;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -33px;
+}
+
+.reference__item:first-child:before {
+    top: 46px;
+}
+
+.reference__item:last-child:before {
+    height: 29px;
+}
+
+.referee {
+    color: blue;
+}
+
+.awards__item {
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.project__preview {
+    width: 241px;
+    height: 166px;
+}
+
+.project__preview img {
+    width: inherit;
+    height: inherit;
+}
+
+.portfolio__list {
+    padding-left: 50px;
+}
+
+.portfolio__item {
+    display: inline-block;
+    width: 240px;
+    margin-bottom: 12pt;
+    margin-right: 12pt;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__item:hover {
+    background-color: aqua;
+}
+
+.project__title {
+    text-align: center;
+    padding-top: 6pt;
+}
+
+.project__desc {
+    text-align: center;
+    padding-bottom: 5pt;
+}
+/*endregion*/
